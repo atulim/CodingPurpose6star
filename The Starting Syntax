@@ -1,0 +1,39 @@
+#include <vector> 
+#include <queue>
+#include <map> 
+#include <set>
+#include <utility> //Pair
+#include <algorithm>
+#include <sstream> // istringstream>> ostring stream<<
+#include <iostream> 
+#include <iomanip>
+#include <cstdio>
+#include <cmath>
+#include <cstdlib>
+#include <ctime>
+#include <cstring>
+#include <cassert>
+#include <fstream>
+#include <limits>
+using namespace std;
+typedef long long int lli;
+#define in(x) scanf("%lld",&x)
+#define in2(x,y) scanf("%lld %lld",&x,&y)
+#define forn(i,n) for (i = 0; i <  (n); i++)
+#define forn2(i,x,n) for (i = x; i <=  (n); i++)
+#define defvec(x) vector <long long int>x
+#define insert(x,y) x.push_back(y)
+#define defmap(x) map < long long int , long long int > x
+
+int gcd(int a, int b) 
+{
+	int tmp;
+	while(b)
+  {
+  a%=b; 
+  tmp=a; 
+  a=b; 
+  b=tmp;
+  }
+	return a;
+}
